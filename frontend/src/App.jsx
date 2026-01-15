@@ -1,14 +1,17 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import {Navbar,Pastes_Form} from './components/imports.js'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className='bg-amber-500' >hello world</div>
+      <div className='bg-[#161618] w-full min-h-screen p-2'>
+        <div className='w-full m-auto md:w-[60%]  '>
+          <Navbar/>
+          <Pastes_Form/>
+        </div>
+      </div>
     </>
   )
 }
